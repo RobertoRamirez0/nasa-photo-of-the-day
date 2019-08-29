@@ -6,8 +6,10 @@ function Photo(props) {
   return (
     <div className='content'>
       <h2 className='title'>{props.title}</h2>
-      <img className='image' src={props.url}/>
-      <p className='desc'>{props.desc}</p>
+      <div className='photo-card'>
+        <img className='image' src={props.url}/>
+        <p className='desc'>{props.desc}</p>
+      </div>
     </div>
   )
 };
