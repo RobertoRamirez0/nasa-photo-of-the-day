@@ -2,7 +2,7 @@ import React from 'react';
 
 // This function takes care of thr footer element
 
-function Footer(){
+function Footer(props){
   const copy = '\u00A9';
   return (
     <div className='footer'>
