@@ -13,7 +13,6 @@ function App() {
   useEffect(()=> {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(response => {
-      console.log(response.data);
       setData(response.data);
     })
     .catch(err => {
@@ -21,12 +20,18 @@ function App() {
     });
   }, []);
   
+  const StyledApp = styled.div `
+    display: flex;
+    flex-direction: column;
+  `
+
+  
   return (
-    <div className="App">
+    <StyledApp className="App">
       <Heading />
       <Photo title={data.title} url={data.url} desc={data.explanation}/>
       <Footer />
-    </div>
+    </StyledApp>
   );
 }
 

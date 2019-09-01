@@ -1,13 +1,25 @@
 import React from 'react'
+import styled from 'styled-components';
+
+//styled components for heading
+
+const OverallHeading = styled.div `
+  align-self: center;
+  width: 15%
+`
+const HeadingStyled = styled.h1 `
+  font-size: 2.2rem;
+`
+
 // This function sets up groundwork for the heading element of the app.
+
 
 
 function Heading(){
   return (
-  <div className='heading'>
-    <h1>NASA Photo of the Day</h1>
-    <p>A React Web App by Roberto Ramirez</p>
-  </div>
+  <OverallHeading className='heading'>
+    <HeadingStyled>NASA Photo of the Day</HeadingStyled>
+  </OverallHeading>
   )
 };
 
