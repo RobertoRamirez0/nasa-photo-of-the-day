@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./design/1064081-starry-night-desktop-background-2560x1440-large-resolution.jpg');
+  color: white;
+  font-size: 62.5%;
 }
 
 code {
